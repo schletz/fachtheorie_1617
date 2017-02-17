@@ -9,4 +9,7 @@ Es soll eine Schule, die mehrere Klassen hat, verwaltet werden. Eine Klasse hat 
 Das Klassendiagramm in UML sieht wie folgt aus:
 ![UML Klassendiagramm](https://github.com/schletz/fachtheorie_1617/blob/master/uebung1/SchulVwKlassendiagramm3.png)
 
-Implementiere nun die Methoden und Properties so, dass sie den oben genannten Prinzipien entsprechen. Dabei soll das Property *Klasse* des Schülers auch beschreibbar sein. Allerdings darf durch das Setzen des Properties die Regel mit der Klassenhöchstzahl nicht verletzt werdne.
+Implementiere nun die Methoden und Properties so, dass sie den oben genannten Prinzipien entsprechen. Dabei soll das Property *Klasse* des Schülers auch beschreibbar sein. Allerdings darf durch das Setzen des Properties die Regel mit der Klassenhöchstzahl nicht verletzt werden.
+
+## Hinweise zur Umsetzung
+Lege eine neue Solution mit dem Namen SchulVw an. Gib die 3 modellierten Klassen in ein Modul mit dem Namespace SchulVw.Model. Zum Testen lege in dieser Solution zudem noch eine Konsolenapplikation SchulVw.App an.
