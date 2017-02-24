@@ -1,0 +1,8 @@
+C:\Users\8admin\Desktop\SchulVw\SchulVw.App\bin\Debug\SchulVw.App.exe.config
+C:\Users\8admin\Desktop\SchulVw\SchulVw.App\bin\Debug\SchulVw.App.exe
+C:\Users\8admin\Desktop\SchulVw\SchulVw.App\bin\Debug\SchulVw.App.pdb
+C:\Users\8admin\Desktop\SchulVw\SchulVw.App\bin\Debug\SchulVw.Model.dll
+C:\Users\8admin\Desktop\SchulVw\SchulVw.App\bin\Debug\SchulVw.Model.pdb
+C:\Users\8admin\Desktop\SchulVw\SchulVw.App\obj\Debug\SchulVw.App.csprojResolveAssemblyReference.cache
+C:\Users\8admin\Desktop\SchulVw\SchulVw.App\obj\Debug\SchulVw.App.exe
+C:\Users\8admin\Desktop\SchulVw\SchulVw.App\obj\Debug\SchulVw.App.pdb

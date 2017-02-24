@@ -1,0 +1,9 @@
+C:\Users\8admin\Desktop\SchulVw\SchulVw.Test\bin\Debug\SchulVw.Test.dll
+C:\Users\8admin\Desktop\SchulVw\SchulVw.Test\bin\Debug\SchulVw.Test.pdb
+C:\Users\8admin\Desktop\SchulVw\SchulVw.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\8admin\Desktop\SchulVw\SchulVw.Test\bin\Debug\SchulVw.Model.dll
+C:\Users\8admin\Desktop\SchulVw\SchulVw.Test\bin\Debug\SchulVw.Model.pdb
+C:\Users\8admin\Desktop\SchulVw\SchulVw.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\8admin\Desktop\SchulVw\SchulVw.Test\obj\Debug\SchulVw.Test.csprojResolveAssemblyReference.cache
+C:\Users\8admin\Desktop\SchulVw\SchulVw.Test\obj\Debug\SchulVw.Test.dll
+C:\Users\8admin\Desktop\SchulVw\SchulVw.Test\obj\Debug\SchulVw.Test.pdb
