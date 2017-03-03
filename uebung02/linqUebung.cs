@@ -10,7 +10,7 @@ namespace LinqTest
     {
         public int Id { set; get; }
         public string Name { set; get; }
-        public ICollection Pruefungen { set; get; } = new List();
+        public ICollection<Pruefung> Pruefungen { set; get; } = new List<Pruefung>();
         public override string ToString()
         {
             return String.Format("ID: {0}, Name: {1}", Id, Name);
@@ -32,7 +32,7 @@ namespace LinqTest
     {
         static void Main(string[] args)
         {
-            List sl = new List();
+            List sl = new List<Schueler>();
 
             Schueler sch = new Schueler { Id = 1, Name = "Mustermann" };
             sch.Pruefungen.Add(new Pruefung { Gegenstand = "POS", Punkte = 12, Note = 5 });
