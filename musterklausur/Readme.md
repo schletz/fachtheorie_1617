@@ -17,6 +17,8 @@ Wie schon beschrieben kann der Kunde im Web das Angebot nach folgenden Kriterien
 
 Ist kein Auto frei, dann soll die Suche intelligent agieren: Es wird zuerst der Filter nach dem Modell und dann der des Herstellers ignoriert. Finden sich mit dieser Lockerung freie Fahrzeuge, werden diese zurückgegeben. Nur wenn auch dies fehlschlägt, wird eine leere Liste geliefert.
 
+*Tipp: Erstelle einen neuen Typ `SearchFilter`, der die Suchfelder als Properties speichert. Optionale Felder können mit ? nullable gesetzt werden. Implementiere die Methode dann in der Klasse FahrtenbuchModel, wobei sie den Typ `IEnumerable<Vehicle>` zurückliefert.
+
 ### Use Case "Trip starten"
 Wenn der Kunde das Fahrzeug reserviert hat, kann er es am Standort abholen. Der Mitarbeiter gibt hierfür das Kennzeichen des Wagens und seine Versicherungsnummer als persönliche ID ein. Danach wird der entsprechende Eintrag in der Tabelle Trips mit dem korrekten KM Stand zu Beginn der Fahrt angelegt.
 
