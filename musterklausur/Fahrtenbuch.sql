@@ -26,7 +26,7 @@ CREATE TABLE [Vehicle] (
   [PricePer100Km] DECIMAL (8,4),                            -- Preis pro angefangener 100km
   [PenaltyPerDay] DECIMAL (8,4)                             -- Wenn das Auto reserviert, aber verspätet
                                                             -- zurückgebracht wird, wird für jeden
-															-- angefangenen Tag dieser Preis verrechnet.
+                                                            -- angefangenen Tag dieser Preis verrechnet.
 );
 GO
 
@@ -49,10 +49,10 @@ CREATE TABLE [Trip] (
   [ID]         UNIQUEIDENTIFIER       PRIMARY KEY  DEFAULT NEWID(),
   [VehicleID]  UNIQUEIDENTIFIER NOT NULL,
   [EmployeeID] UNIQUEIDENTIFIER NOT NULL,
-  [StartDate]  DATETIME NOT NULL,
-  [EndDate]    DATETIME,
-  [KmBegin]    DECIMAL(9,2) NOT NULL,
-  [KmEnd]      DECIMAL(9,2),
+  [StartDate]  DATETIME NOT NULL,                            -- Datum der Übergabe des Fahrzeuges
+  [EndDate]    DATETIME,                                     -- Datum der Rückgabe. NULL wenn das Auto unterwegs ist.
+  [KmBegin]    DECIMAL(9,2) NOT NULL,                        -- KM Stand zu Beginn der Fahrt.
+  [KmEnd]      DECIMAL(9,2),                                 -- KM Stand am Ende der Fahrt. NULL wenn das Auto unterwegs ist.
 
 
   FOREIGN KEY ([VehicleID]) REFERENCES [Vehicle]([ID]),
