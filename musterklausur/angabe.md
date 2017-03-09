@@ -17,13 +17,13 @@ Wie schon beschrieben kann der Kunde im Web das Angebot nach folgenden Kriterien
 
 Ist kein Auto frei, dann soll die Suche intelligent agieren: Es wird zuerst der Filter nach dem Modell und dann der des Herstellers ignoriert. Finden sich mit dieser Lockerung freie Fahrzeuge, werden diese zurückgegeben. Nur wenn auch dies fehlschlägt, wird eine leere Liste geliefert.
 
-## Use Case "Trip starten"
+### Use Case "Trip starten"
 Wenn der Kunde das Fahrzeug reserviert hat, kann er es am Standort abholen. Der Mitarbeiter gibt hierfür das Kennzeichen des Wagens ein, und es wird der entsprechende Eintrag in der Tabelle Trips angelegt.
 
-## Use Case "Reservierung verlängern"
+### Use Case "Reservierung verlängern"
 Der Kunde kann auch während der Reservierung anrufen, um die Reservierung zu verlängern. Er nennt dabei den neuen Tag, wann er das Auto zurückbringen wird. Das wird ihm aber nur gewährt, wenn das Auto auch nicht schon reserviert wurde. 
 
-## Use Case "Auto zurückgeben"
+### Use Case "Auto zurückgeben"
 Kommt der Kunde in die Filiale, so gibt der Mitarbeiter das Kennzeichen des Autos in eine Maske ein. Daraufhin erscheint dann der zu verlangende Preis. Entwickeln Sie eine Methode, die ausgehend vom Kennzeichen den Preis des gerade offenen Trips zurückgibt. Dieser ist daran zu erkennen, dass das Bis Datum NULL ist. In dieser Methode soll dann auch der Trip beendet und der Kilometerstand berichtigt werden.
 
 
