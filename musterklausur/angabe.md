@@ -18,7 +18,7 @@ Wie schon beschrieben kann der Kunde im Web das Angebot nach folgenden Kriterien
 Ist kein Auto frei, dann soll die Suche intelligent agieren: Es wird zuerst der Filter nach dem Modell und dann der des Herstellers ignoriert. Finden sich mit dieser Lockerung freie Fahrzeuge, werden diese zurückgegeben. Nur wenn auch dies fehlschlägt, wird eine leere Liste geliefert.
 
 ### Use Case "Trip starten"
-Wenn der Kunde das Fahrzeug reserviert hat, kann er es am Standort abholen. Der Mitarbeiter gibt hierfür das Kennzeichen des Wagens ein, und es wird der entsprechende Eintrag in der Tabelle Trips angelegt.
+Wenn der Kunde das Fahrzeug reserviert hat, kann er es am Standort abholen. Der Mitarbeiter gibt hierfür das Kennzeichen des Wagens und seine Versicherungsnummer als persönliche ID ein. Danach wird der entsprechende Eintrag in der Tabelle Trips mit dem korrekten KM Stand zu Beginn der Fahrt angelegt.
 
 ### Use Case "Reservierung verlängern"
 Der Kunde kann auch während der Reservierung anrufen, um die Reservierung zu verlängern. Er nennt dabei den neuen Tag, wann er das Auto zurückbringen wird. Das wird ihm aber nur gewährt, wenn das Auto auch nicht schon reserviert wurde. 
