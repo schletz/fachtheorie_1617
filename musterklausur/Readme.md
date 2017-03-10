@@ -1,6 +1,6 @@
 # Starten des Musterprojektes
 1. Die Datei FahrtenbuchMusterprojekt...7z laden und entpacken.
-2. Die Solution in Visual Studio 2015 öffnen (2013 geht nicht!). Dabei die Warnung, dass der Inhalt von einer Onlinequelle kommt, mit OK bestätigen.
+2. Die Solution in Visual Studio 2015 öffnen (2013 geht nicht!). Dabei die Warnung, dass der Inhalt von einer Onlinequelle stammt, mit OK bestätigen.
 3. Mit Build -> Rebiuld Solution die Solution erzeugen.
 3. Mit Test -> Window -> Text Explorer den Test `CheckDb` ausführen. Dieser wird fehlschlagen, er hat aber eine neue Datenbank mit dem Namen "Fahrtenbuch" angelegt.
 4. Mit View -> SQL Server Object Explorer unter `(localdb)\MSSQLLocalDb`die Datenbank `FAHRTENBUCH_...` mit der rechten Maustaste anklicken und *New Query* im Kontextmenü wählen.
