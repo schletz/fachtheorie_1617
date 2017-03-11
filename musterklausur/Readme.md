@@ -10,7 +10,7 @@
 Sie sollen für eine Fahrzeugvermietung eine Applikation entwickeln, die die Reservierung von Fahrzeugen abdeckt. Für die Speicherung der Daten gibt es schon eine Datenbank, das Modell ist unten abgebildet. Verwenden Sie das bereitgestellte Visual Studio 2015 Projekt samt der inkludierten Datenbank als Startpunkt der Entwicklung.
 
 Die Kunden kommen auf 2 Arten zu ihrem Wagen: entweder sie suchen auf der Webseite nach bestimmten Auswahlkriterien wie Zeitraum, Anzahl der Sitzplätze, Hersteller oder Modell. Danach bekommen sie eine Liste von verfügbaren Autos angezeigt.
-Die zweite Veriante ist die direkte Buchung im Geschäft. Hier ermittelt der Mitarbeiter alle verfügbaren Autos, und nach dem Kundengespräch wird ein Auto zugeteilt. Bei jeder Reservierung muss angegeben werden, wann das Auto zurückgebracht wird. Versäumt der Kunde diese Frist, so ist pro Tag ein Strafbetrag zu entrichten.
+Die zweite Variante ist die direkte Buchung im Geschäft. Hier ermittelt der Mitarbeiter alle verfügbaren Autos, und nach dem Kundengespräch wird ein Auto zugeteilt. Bei jeder Reservierung muss angegeben werden, wann das Auto zurückgebracht wird. Versäumt der Kunde diese Frist, so ist pro Tag ein Strafbetrag zu entrichten.
 
 Bei jedem Auto gibt es einen Grundpreis, der immer zu entrichten ist. In diesem Grundpreis ist - je nach Wagen - ein gewisses Kontingent von Kilometern enthalten. Ist dieses aufgebraucht, dann wird pro 100 gefahrener Kilometer zusätzlich noch eine Gebühr aufgeschlagen.
 
