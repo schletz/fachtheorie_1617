@@ -37,3 +37,47 @@ Der Kunde kann auch während der Reservierung anrufen, um die Reservierung zu ve
 Kommt der Kunde in die Filiale, so gibt der Mitarbeiter das Kennzeichen des Autos in eine Maske ein. Daraufhin erscheint dann der zu verlangende Preis. Entwickeln Sie eine Methode, die ausgehend vom Kennzeichen den Preis des gerade offenen Trips zurückgibt. Dieser ist daran zu erkennen, dass das Bis Datum NULL ist. In dieser Methode soll dann auch der Trip beendet und der Kilometerstand berichtigt werden.
 
 
+## REST Webservice
+Erstelle mit Hilfe der Microsoft Web API 2 ein REST Webservice. Die Daten sollen im JSON Format
+ausgegeben werden. Es handelt sich immer um HTTP GET Requests, eine Autentifizierung ist nicht
+vorzusehen. Folgende Routen sollen implementiert werden:
+
+### /api/Cars
+Liefert alle verfügbaren Autos in der Form 
+```
+[{"ID": string, "Type": string, "Brand": string, "Model".string, "NumberPlate": string, "SeatNr": number, "Km": number, "BasicPrice": number, "IncludedKm": number, "PricePer100Km": number, "PenaltyPerDay": number},...]
+```
+
+### /api/Cars/(NumberPlate)
+Liefert obige Informationen, allerdings nur für das Auto mit dem übergebene KFZ Kennzeichen.
+
+### /api/Cars/Available/(DateFrom)/(DateTo)
+Gibt alle verfügbaren Autos aus, die im gesamten Zeitraum zwischen DateFrom und DateTo noch zu
+haben sind. Die Datumswerte sind in der Form JJJJ-MM-TT zu übergeben. Die JSON Ausgabe ist wie
+in der ersten Cars Route.
+
+### /api/Employee/Reservations
+Gibt alle Mitarbeiter samt ihren Reservierungen aus. Aufbau: 
+```
+[
+    {"ID": string, "Firstname": string, "Lastname": string, "Reservations": {
+        "ReservationId": string,
+        "StartDate": string,
+        "EndDate": string,
+        "NumberPlate": string
+    }, ...
+}, ...]
+```
+
+### /api/Employee/(GUID)/Earnings
+Gibt den erwirtschafteten Umsatz des mit der GUID angegebenen Mitarbeiters aus. Ausgabe:
+```
+[
+    {"ID": string, "Firstname": string, "Lastname": string, "Earnings": number}, ...
+}]
+```
+
+### /api/Employee/GUID/Earnings/(DateFrom)/(DateTo)
+Gibt den erwirtschafteten Umsatz zwischen den angegebenen Datumswerten aus. Die Datumswerte sind
+in der Form JJJJ-MM-TT zu übergeben. Die JSON Ausgabe lautet wie bei der ersten Earnings Route.
+
