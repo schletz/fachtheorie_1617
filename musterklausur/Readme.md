@@ -43,9 +43,9 @@ ausgegeben werden. Es handelt sich immer um HTTP GET Requests, eine Autentifizie
 vorzusehen. Folgende Routen sollen implementiert werden:
 
 ### /api/Cars
-Liefert alle verfügbaren Autos in der Form 
+Liefert alle Autos in der Form 
 ```
-[{"ID": string, "Type": string, "Brand": string, "Model".string, "NumberPlate": string, "SeatNr": number, "Km": number, "BasicPrice": number, "IncludedKm": number, "PricePer100Km": number, "PenaltyPerDay": number},...]
+[{"ID": string, "Type": string, "Brand": string, "Model":string, "NumberPlate": string, "SeatNr": number, "Km": number, "BasicPrice": number, "IncludedKm": number, "PricePer100Km": number, "PenaltyPerDay": number},...]
 ```
 
 ### /api/Cars/(NumberPlate)
