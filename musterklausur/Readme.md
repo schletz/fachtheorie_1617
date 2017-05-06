@@ -1,10 +1,7 @@
 # Starten des Musterprojektes
-1. Die Datei FahrtenbuchMusterprojekt...7z laden und entpacken.
-2. Die Solution in Visual Studio 2015 öffnen (2013 geht nicht!). Dabei die Warnung, dass der Inhalt von einer Onlinequelle stammt, mit OK bestätigen.
-3. Mit Build -> Rebuild Solution die Solution erzeugen.
-3. Mit Test -> Window -> Text Explorer den Test `CheckDb` ausführen. Dieser wird fehlschlagen, er hat aber eine neue Datenbank mit dem Namen "Fahrtenbuch" angelegt.
-4. Mit View -> SQL Server Object Explorer unter `(localdb)\MSSQLLocalDb`die Datenbank `FAHRTENBUCH_...` mit der rechten Maustaste anklicken und *New Query* im Kontextmenü wählen.
-5. Den SQL Dump in Fahrtenbuch.sql in das Abfragefenster kopieren und ausführen (kleiner Play Button).
+1. Erstelle einen Ordner `C:\Scratch`
+2. Lade mit `LocalDbLoader Fahrtenbuch.sql C:\Scratch\Fahrtenbuch.mdf` die Daten in die Datenbank.
+3. Öffne die Solution Datei mit Visual Studio 2015 oder 2017
 
 # Fahrzeugvermietung
 Sie sollen für eine Fahrzeugvermietung eine Applikation entwickeln, die die Reservierung von Fahrzeugen abdeckt. Für die Speicherung der Daten gibt es schon eine Datenbank, das Modell ist unten abgebildet. Verwenden Sie das bereitgestellte Visual Studio 2015 Projekt samt der inkludierten Datenbank als Startpunkt der Entwicklung.

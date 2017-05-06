@@ -1,4 +1,0 @@
-C:\Users\8admin\Desktop\SchulVw\SchulVw.Model\bin\Debug\SchulVw.Model.dll
-C:\Users\8admin\Desktop\SchulVw\SchulVw.Model\bin\Debug\SchulVw.Model.pdb
-C:\Users\8admin\Desktop\SchulVw\SchulVw.Model\obj\Debug\SchulVw.Model.dll
-C:\Users\8admin\Desktop\SchulVw\SchulVw.Model\obj\Debug\SchulVw.Model.pdb

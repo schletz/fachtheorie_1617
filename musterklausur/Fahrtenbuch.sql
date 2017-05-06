@@ -1,16 +1,10 @@
-﻿IF OBJECT_ID('dbo.[Trip]', 'U') IS NOT NULL DROP TABLE dbo.Trip; 
-IF OBJECT_ID('dbo.[Reservation]', 'U') IS NOT NULL DROP TABLE dbo.Reservation; 
-IF OBJECT_ID('dbo.[Vehicle]', 'U') IS NOT NULL DROP TABLE dbo.Vehicle; 
-IF OBJECT_ID('dbo.[Employee]', 'U') IS NOT NULL DROP TABLE dbo.Employee; 
-
--- Der Mitarbeiter, der Fahrzeuge vergeben kann.
+﻿-- Der Mitarbeiter, der Fahrzeuge vergeben kann.
 CREATE TABLE [Employee] (
   [ID]        UNIQUEIDENTIFIER  PRIMARY KEY DEFAULT NEWID(),
   [Firstname] NVARCHAR(50) NOT NULL,
   [Lastname]  NVARCHAR(50) NOT NULL,
   [SVNR]      NVARCHAR(10) NOT NULL,
 );
-GO
 
 -- Beschreibt das Fahrzeug.
 CREATE TABLE [Vehicle] (
@@ -28,7 +22,6 @@ CREATE TABLE [Vehicle] (
                                                             -- zurückgebracht wird, wird für jeden
                                                             -- angefangenen Tag dieser Preis verrechnet.
 );
-GO
 
 -- Über Internet können Kunden ein Auto reservieren. Dabei geben Sie an, von wann bis wann sie es
 -- haben möchten. Im Geschäft wird diese Reservierung direkt vom Mitarbeiter an einem Terminal eingegeben.
@@ -41,7 +34,6 @@ CREATE TABLE [Reservation] (
   FOREIGN KEY ([VehicleID]) REFERENCES [Vehicle]([ID]),
   FOREIGN KEY ([EmployeeID]) REFERENCES [Employee]([ID]),
 );
-GO
 
 -- Beim wirklichen Ausborgen wird ein Datensatz in Trip angelegt. Beim Zurückbringen wird dann in
 -- den Feldern EndDate und KmEnd die aktuelle Information geschrieben.
