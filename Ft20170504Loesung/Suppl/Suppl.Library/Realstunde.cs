@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Suppl.Library
 {
-    public class UnterrichtVertretung
-    {
-        public Unterrichtsstunden Unterricht { get; set; }
-        public IEnumerable<Vertretungen> Vertretungen { get; set; }
-    }
+    /// <summary>
+    /// Fügt die Unterrichtsstunde und die Vertretung zusammen.
+    /// </summary>
     public class Realstunde
     {
         public int UntisId { get; set; }
@@ -23,21 +21,5 @@ namespace Suppl.Library
         public Unterrichtsstunden Unterricht { get; set; }
         public Vertretungen Vertretung { get; set; }
         public bool IstVertretung { get { return Vertretung != null; } }
-        public Vertretungen ErstelleVertretung(DateTime tag)
-        {
-            if (Vertretung != null) { return Vertretung; }
-            Vertretungen v = new Vertretungen
-            {
-                UntisId = this.UntisId,
-                Tag = tag,
-                NeuerLehrer = this.Lehrer,
-                NeuerRaum = this.Raum,
-                NeuesFach = this.Fach,
-                NeuerTag = tag,
-                NeueStunde = this.Stunde,
-            };
-            this.Vertretung = v;
-            return v;
-        }
     }
 }
